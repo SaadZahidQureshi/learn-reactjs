@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+// App.js
+import React, { useState } from "react";
+import PermitModal from "./components/PermitModal";
+import CreditCard from "./components/creditCard";
+import { ToastProvider } from './context/ToastContext';
+import ToastTrigger from "./components/toastTriger";
 
 function App() {
+  const [isModalOpen, setModalOpen] = useState(false);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ToastProvider>
+      <div className="app-container">
+        {/* <CreditCard isOpen={isModalOpen} onClose={() => setModalOpen(false)} /> */}
+        <ToastTrigger />
+        {/* Your other components */}
+      </div>
+    </ToastProvider>
   );
 }
 

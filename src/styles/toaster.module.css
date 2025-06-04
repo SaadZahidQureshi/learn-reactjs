@@ -1,0 +1,84 @@
+/* components/Toast.module.css */
+.toast {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  min-width: 300px;
+  max-width: 400px;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  transform: translateX(150%);
+  animation: slideIn 0.5s forwards, fadeOut 0.5s 2.5s forwards;
+}
+
+.toastHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.toastTitle {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.closeButton {
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 0 5px;
+  line-height: 1;
+}
+
+.toastBody {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* Toast types */
+.info {
+  background-color: #e7f5ff;
+  color: #1864ab;
+  border-left: 4px solid #1864ab;
+}
+
+.success {
+  background-color: #ebfbee;
+  color: #2b8a3e;
+  border-left: 4px solid #2b8a3e;
+}
+
+.warning {
+  background-color: #fff9db;
+  color: #e67700;
+  border-left: 4px solid #e67700;
+}
+
+.error {
+  background-color: #fff5f5;
+  color: #c92a2a;
+  border-left: 4px solid #c92a2a;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(150%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
