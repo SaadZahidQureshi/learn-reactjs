@@ -1,0 +1,87 @@
+.container {
+  max-width: 600px;
+  min-width: 400px;
+  width: 100%;
+  color: white;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.card {
+  padding: 20px;
+  border-radius: 10px;
+  /* background: linear-gradient(135deg, #2d3748, #4a5568); */
+  background-color: rgba(38, 38, 38, 1);
+  /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); */
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+/* .card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 70%);
+  transform: rotate(30deg);
+} */
+
+.card.selected {
+  /* background: linear-gradient(135deg, #86f221, #4ade80); */
+  background-color: #86f221;
+  color: #000;
+}
+
+.cardNumber {
+    font-weight: 600;
+    font-size: 18px;
+  /* margin-bottom: 25px; */
+  font-family: 'Courier New', monospace;
+}
+
+.cardDetails {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.cardName, .cardExpiry {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.actionBtns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.actionBtn {
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid rgba(134, 242, 33, 1);
+  background: unset;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.addNew {
+  color: rgba(134, 242, 33, 1);
+}
+
+.continue {
+  background-color: rgba(134, 242, 33, 1);
+}
+
+/* Rest of your existing styles... */

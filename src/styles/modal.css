@@ -1,0 +1,147 @@
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-container {
+  background-color: #1e1e1e;
+  color: #fff;
+  border-radius: 10px;
+  width: 753px;
+  padding: 30px;
+  position: relative;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+.modal-title {
+  text-align: center;
+  font-size: 1.8em;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.close-button {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  background: #ff4d4d;
+  border: none;
+  color: white;
+  font-size: 1.2em;
+  border-radius: 5px;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-left: 84px;
+  padding-right: 84px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+input[type="text"],
+input[type="date"],
+select {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #2a2a2a;
+  border: 1px solid #444;
+  color: white;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-direction: row;
+}
+
+input[type="checkbox"] {
+  border: 1px solid #80ff00;
+}
+
+input[type="checkbox"]:checked {
+  accent-color: #80ff00;
+  color: white;
+  border-color: #80ff00;
+}
+
+.addon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2a2a2a;
+  padding: 10px;
+  border-radius: 5px;
+  flex-direction: row;
+}
+
+.price {
+  font-weight: bold;
+  color: #80ff00;
+}
+
+.upload-box {
+  background-color: #2a2a2a;
+  padding: 42px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.upload-icon {
+  font-size: 1.2em;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  width: 50%;
+  flex-direction: column;
+  align-self: center;
+}
+
+.actions > div {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+}
+
+.btn {
+  flex: 1;
+  padding: 12px 0px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+background-color: #80ff00;
+  color: black;
+}
+
+.btn.save {
+  background-color: #80ff00;
+}
