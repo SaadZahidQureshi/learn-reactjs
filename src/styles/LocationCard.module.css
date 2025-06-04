@@ -1,0 +1,165 @@
+
+.container {
+  max-width: 600px;
+  min-width: 400px;
+  width: 100%;
+  color: white;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.locationCard {
+  padding: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 10px;
+  background-color: rgba(38, 38, 38, 1);
+}
+
+.locationCard:last-of-type {
+  border-bottom: none;
+}
+
+.locationCard:hover {
+  background-color: rgba(134, 242, 33, 1);
+  color: #000;
+}
+
+.locationCard:hover p {
+  color: #000;
+}
+
+.selected {
+  background-color: rgba(134, 242, 33, 1);
+  color: #000;
+  animation: cardSelect 0.3s ease;
+}
+
+.selected:hover {
+  background-color: rgba(134, 242, 33, 1);
+}
+
+.cardContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.locationInfo h3 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 4px;
+  text-transform: capitalize;
+}
+
+.locationInfo p {
+  font-size: 14px;
+  color: #9ca3af;
+}
+
+.selected .locationInfo p {
+  color: #000;
+}
+
+.defaultBadge {
+  background-color: #374151;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.pricingSummary {
+  background-color: rgba(134, 242, 33, 0.15);
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+
+.pricingRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.pricingRow:last-child {
+  margin-bottom: 0;
+}
+
+.pricingLabel {
+  color: rgba(134, 242, 33, 1);
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.pricingValue {
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.totalRow .pricingLabel,
+.totalRow .pricingValue {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.actionBtns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.actionBtn {
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid rgba(134, 242, 33, 1);
+  background: unset;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.addNew {
+  color: rgba(134, 242, 33, 1);
+}
+
+.continue {
+  background-color: rgba(134, 242, 33, 1);
+}
+
+@keyframes cardSelect {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.02); }
+  100% { transform: scale(1); }
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .container {
+    margin: 0 10px;
+  }
+  
+  .locationCard {
+    padding: 14px;
+  }
+  
+  .locationInfo h3 {
+    font-size: 16px;
+  }
+  
+  .pricingSummary {
+    padding: 16px;
+  }
+
+  .actionBtn {
+    width: 150px;
+  }
+}

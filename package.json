@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "lesson-1",
+=======
+  "name": "modals",
+>>>>>>> e74e67c14fddf3933255f949a3650910ceaa46a2
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -7,7 +11,10 @@
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^13.5.0",
+<<<<<<< HEAD
     "classnames": "^2.5.1",
+=======
+>>>>>>> e74e67c14fddf3933255f949a3650910ceaa46a2
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-scripts": "5.0.1",
