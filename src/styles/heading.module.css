@@ -1,0 +1,20 @@
+/* Button.module.css */
+.div {
+  padding: 10px 20px;
+  background: blue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.p{
+  background: darkblue;
+}
+
+.red{
+    color: red;
+}
+
+.active {
+    background-color: greenyellow;
+}
